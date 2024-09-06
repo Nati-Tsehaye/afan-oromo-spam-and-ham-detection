@@ -1,6 +1,6 @@
 {
-    "name": "safe_crop",
-    "short_name": "safe_crop",
+    "name": "textclassification",
+    "short_name": "textclassification",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

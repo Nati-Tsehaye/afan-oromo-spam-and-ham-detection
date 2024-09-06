@@ -1,4 +1,4 @@
-name: safe_crop
+name: afan_oromo_spam_and_ham_detection
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,51 +35,19 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  firebase_core: ^2.27.0
-  cloud_firestore: ^4.15.8
-  http: ^1.2.0
-  sqflite: ^2.3.2
-  path_provider: ^2.1.3
-  image_picker: ^1.0.7
-  tflite_v2: ^1.0.0
-  connectivity: ^3.0.6
-  firebase_database: ^10.4.9
-  firebase_storage: ^11.6.9
-  uuid: ^4.4.0
-  device_info: ^2.0.3
-  geolocator: ^11.0.0
-  permission_handler: ^11.3.1
-  get_phone_number: ^3.0.10
-  mobile_number: ^2.1.1
-  sms_autofill: ^2.3.1
-  firebase_app_check: ^0.2.1+17
-  internet_connection_checker: ^1.0.0+1
-  connectivity_plus: ^6.0.3
-  shared_preferences: ^2.2.3
-  
-
-  #  this is for localaizations
-  flutter_localizations:
-    sdk: flutter
-  intl: ^0.18.0
-  provider: ^6.1.2
-  firebase_auth: ^4.17.8
-  fluttertoast: ^8.2.5
+  tflite_flutter: ^0.10.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: ^0.13.1
-  
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-flutter_icons:
-  android: true
-  image_path: "assets/4.png"
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -93,34 +61,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/am.json
-    - assets/en.json
-    - assets/or.json
-    - assets/a.png
-    - assets/b.png
-    - assets/c.png
-    - assets/d.png
-    - assets/d.png
-    - assets/capture.png
-    - assets/labels.txt
-    - assets/mobile-camera-icon.png
-    - assets/upload.jpg
-    - assets/Maizedetectionv2.tflite
-    - assets/Pestmobile.tflite
-    - assets/pestlabels.txt
-    - assets/MaizedetectionV4.tflite
-    - assets/1.jpg
-    - assets/2.jpg
-    - assets/3.jpg
-    - assets/4.png
-    - assets/result.png
-    - assets/historyde.jpg
-    - assets/history.png
-    - assets/home.png
-    - assets/profile.jpg
-    - assets/profilede.jpg
-    
- 
+    - assets/text_classification.tflite
+    - assets/text_classification_vocab.txt
+    - assets/spam_ham_classifier.tflite
+    - assets/spamham.tflite
+
+    - assets/test/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
   # For details regarding adding assets from package dependencies, see
